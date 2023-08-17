@@ -7,9 +7,27 @@
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <title>活動訂票網</title>
-    <script type="module" crossorigin src="/week6/assets/main-35ebb731.js"></script>
-    <link rel="stylesheet" href="/week6/assets/main-3101d0c8.css">
+    <script>
+      const swiper = new Swiper('.mySwiper', {
+        allowTouchMove: false,
+        speed: 5000,
+        slidesPerView: "auto",
+        loop: true,
+        autoplay: {
+    
+          //到下一個幻燈片時，停下的時間
+          delay: 0,    
+          
+          //避免點擊造成跑馬燈失效，視情況增加
+          disableOnInteraction: false
+        }
+      }
+      )
+    </script>
+    <script type="module" crossorigin src="/week6/assets/main-109c6cef.js"></script>
+    <link rel="stylesheet" href="/week6/assets/main-d02415eb.css">
     <link rel="stylesheet" href="/week6/assets/index-e0377ea7.css">
   </head>
   <body>
@@ -36,7 +54,7 @@
 </div>
 
     <div class="container">
-      <div class="card  d-flex flex-column mb-5 justify-content-between ">
+      <div class="card d-flex flex-column mb-5 justify-content-between ">
       <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/13.jpg?raw=true" alt="" class="card-img img-fluid">
       <div class="card-img-overlay">
       <h1 class="h1 card-title text-white">19 MAY 2023 </h1>
@@ -81,12 +99,15 @@
    <div class="container border border-3 border-primary d-flex justify-content-between align-items-center px-3 py-2 mb-4">
     <h2 class="fs-7 mb-0">RECENT</h2>
     <h3 class="fw-bold mb-0">近期活動</h3>
+    
    </div>
    <!--活動*6-->
    <div class="container">
     <ul class="row list-unstyled">
       
+      
       <li class="col-md-4">
+        <div class="card h-100 bg-transparent border-0">
         <h3 class="border-bottom border-2 border-primary mb-1 pb-1">19 MAY 2023</h3>
         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/01.jpg?raw=true" alt="event01" class="img-fluid mb-1">
         <h4 class="h4 fw-bold mb-1">邪典電影派對——房間</h4>
@@ -96,15 +117,18 @@
             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" alt="sparkler" class="img-fluid sparkler-icon">
             <p class=" fw-bold">社群活動</p>
           </div>
-          <div class="d-flex">
+          <div class="d-flex card-footer">
             <p class="font-NotoSans fw-bold">開賣中</p>
             <span class="material-icons">
               keyboard_double_arrow_right
               </span>
           </div>
         </div>
+      </div>
       </li>
+      
       <li class="col-md-4">
+        <div class="card h-100 bg-transparent border-0">
         <h3 class="border-bottom border-2 border-primary mb-1 pb-1">23 MAY 2023</h3>
         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/02.jpg?raw=true" alt="event02" class="img-fluid mb-1">
         <h4 class="h4 fw-bold mb-1">怪舞俱樂部</h4>
@@ -114,15 +138,18 @@
             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" alt="sparkler" class="img-fluid sparkler-icon">
             <p class=" fw-bold">社群活動</p>
           </div>
-          <div class="d-flex">
+          <div class="d-flex card-footer">
             <p class="font-NotoSans fw-bold">開賣中</p>
             <span class="material-icons">
               keyboard_double_arrow_right
               </span>
           </div>
         </div>
+      </div>
       </li>
+      
       <li class="col-md-4">
+        <div class="card h-100 bg-transparent border-0">
         <h3 class="border-bottom border-2 border-primary mb-1 pb-1">19 MAY 2023</h3>
         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/03.jpg?raw=true" alt="event03" class="img-fluid mb-1">
         <h4 class="h4 fw-bold mb-1">哈利波特馬拉松</h4>
@@ -132,17 +159,20 @@
             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" alt="sparkler" class="img-fluid sparkler-icon">
             <p class=" fw-bold">社群活動</p>
           </div>
-          <div class="d-flex">
+          <div class="d-flex card-footer">
             <p class="font-NotoSans fw-bold">開賣中</p>
             <span class="material-icons">
               keyboard_double_arrow_right
               </span>
           </div>
         </div>
+      </div>
       </li>
+      
       <li class="col-md-4">
+        <div class="card h-100 bg-transparent border-0">
         <h3 class="border-bottom border-2 border-primary mb-1 pb-1">19 MAY 2023</h3>
-        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/04.jpg?raw=true" alt="event04" class="img-fluid mb-1">
+        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/04.jpg?raw=true" alt="event04" class="img-fluid ratio ratio-16x9 mb-1" >
         <h4 class="h4 fw-bold mb-1">皮卡丘排球大賽</h4>
         <p class="font-NotoSans border-bottom border-2 border-primary pb-2 ">還記得小時候玩的小遊戲嗎？總是有朋友吹噓自己獨孤求敗、只求一敗？是時候該展現真正的實力了！本活動採用瑞士制賽程，以絕對公平的方式進行，是時候該證明自己...</p>
         <div class="d-flex justify-content-between align-items-center border-primary  border-bottom border-2 mb-5">
@@ -150,17 +180,20 @@
             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" alt="sparkler" class="img-fluid sparkler-icon">
             <p class=" fw-bold">社群活動</p>
           </div>
-          <div class="d-flex">
+          <div class="d-flex card-footer">
             <p class="font-NotoSans fw-bold">開賣中</p>
             <span class="material-icons">
               keyboard_double_arrow_right
               </span>
           </div>
         </div>
+      </div>
       </li>
+      
       <li class="col-md-4">
+        <div class="card h-100 bg-transparent border-0">
         <h3 class="border-bottom border-2 border-primary mb-1 pb-1">19 MAY 2023</h3>
-        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/05.jpg?raw=true" alt="event05" class="img-fluid mb-1">
+        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/05.jpg?raw=true" alt="event05" class="img-fluid  mb-1">
         <h4 class="h4 fw-bold mb-1">酒精路跑</h4>
         <p class="font-NotoSans border-bottom border-2 border-primary pb-2 ">身邊總是有對自己酒量有高度自信的朋友嗎？拉著他/她一起來參加酒精路跑吧！一起拍下第一杯直到倒下為止的照片，一起喝遍市區內各家極具品味的酒吧。
         </p>
@@ -169,15 +202,18 @@
             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" alt="sparkler" class="img-fluid sparkler-icon">
             <p class=" fw-bold">社群活動</p>
           </div>
-          <div class="d-flex">
+          <div class="d-flex card-footer">
             <p class="font-NotoSans fw-bold">開賣中</p>
             <span class="material-icons">
               keyboard_double_arrow_right
               </span>
           </div>
         </div>
+      </div>
       </li>
+      
       <li class="col-md-4">
+        <div class="card h-100 bg-transparent border-0">
         <h3 class="border-bottom border-2 border-primary mb-1 pb-1">19 MAY 2023</h3>
         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/06.jpg?raw=true" alt="event06" class="img-fluid mb-1">
         <h4 class="h4 fw-bold mb-1">展覽——我的房間</h4>
@@ -187,24 +223,72 @@
             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" alt="sparkler" class="img-fluid sparkler-icon">
             <p class=" fw-bold">社群活動</p>
           </div>
-          <div class="d-flex">
+          <div class="d-flex card-footer">
             <p class="font-NotoSans fw-bold">開賣中</p>
             <span class="material-icons">
               keyboard_double_arrow_right
               </span>
           </div>
         </div>
+      </div>
       </li>
     </ul>
   </div>
     
+  <div class="container border border-3 border-primary d-flex justify-content-between align-items-center px-3 py-2 mb-4">
+    <h2 class="fs-7 mb-0">ONLINE</h2>
+    <h3 class="fw-bold mb-0">線上活動</h3>
+    
+   </div>
 
+   <!--切特居批踢-->
+   <div class="container">
+    <div class="row mb-6">
+      <div class="col-md-7">
+       <div class="d-flex">
+        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/online.jpg?raw=true" alt="" class="online-img">
+       </div>
+      </div>
+      <div class="col-md-5">
+        <div class="d-flex flex-column">
+          <h3 class="fs-3 mb-2 fw-bold ">切特居批踢</h3>
+            <div class="d-flex mb-4">
+              <p class="fw-bold me-1 px-3 border border-primary">競賽</p>
+              <p class="fw-bold me-1 px-3 border border-primary">科技</p>
+              <p class="fw-bold me-1 px-3 border border-primary">有趣</p>
+            </div>
+          <p class="mb-4 font-NotoSans">
+            最近網路上很流行的AI程式 ChatGPT，可以用來聊天或是查詢、整理各種資料，不同的應用方式如雨後春筍般冒出來。<br>
+            這個活動讓大家把自己最有特色的使用方法提出來讓大家參考，也會投票出最有趣的用法。<br>
+            該讓其他人知道自己使用 ChatGPT 的姿勢才是最特別的那個了！
+          </p>
+          <a href="#" class="btn btn-primary">查看活動詳情</a>
+      </div>
 
+      </div>
+    </div>
+   </div>
+
+   <!--swiper-->
+   <!-- Slider main container -->
+   <div class="container">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+        <div class="swiper-slide">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+        <div class="swiper-slide">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+        <div class="swiper-slide">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+        <div class="swiper-slide">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
+      </div>
+    </div>
+    
+  </div>
     
 
 
  
-    
+       
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     
   </body>
 </html>
