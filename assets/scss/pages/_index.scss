@@ -1,3 +1,26 @@
-.index-title {
-  font-size: 100px;
+.logo-img{
+  height: 44px;
+  width: 44px;
+}
+.banner-img{
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/13.jpg?raw=true);
+  background-size: cover;
+  background-position:center  center;
+  background-repeat: no-repeat;
+  
+}
+
+.explore-logo{
+  height: 80px;
+  width: 80px;
+}
+.explore-p{
+  padding: 35px 58px;
+}
+.sparkler-icon{
+  width: 24px;
+  height: 24px;
+}
+.font-NotoSans{
+  font-family: "Noto Sans TC";
 }
