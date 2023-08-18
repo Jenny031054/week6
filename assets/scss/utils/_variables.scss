@@ -336,7 +336,7 @@ $escaped-characters: (
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret:                true !default;
-$enable-rounded:              true !default;
+$enable-rounded:              false !default;
 $enable-shadows:              false !default;
 $enable-gradients:            false !default;
 $enable-transitions:          true !default;
@@ -589,6 +589,39 @@ $font-sizes: (
 ) !default;
 // scss-docs-end font-sizes
 
+//自定義RWD font-size
+$utilities: (
+  "font-sizes": (
+    property: font-size,
+    responsive: true,
+    values: (
+      1:  $h1-font-size ,//60
+      2:  $h2-font-size ,//48
+      3:  $h3-font-size ,//32
+      4:  $h4-font-size ,//24
+      5:  $h5-font-size ,//20
+      
+    )
+  )
+ );
+ $utilities: (
+  "font-sizes": (
+    property: font-size,
+    responsive: true,
+    class: fs,
+    values: (
+      1:  60px,
+      2:  48px ,
+      3:  32px ,
+      4:  24px ,
+      5:  20px ,
+      6:  16px,
+      7:  64px,
+      18: 18px,
+      
+    )
+  )
+ );
 // scss-docs-start headings-variables
 $headings-margin-bottom:      $spacer * .5 !default;
 $headings-font-family:        null !default;
@@ -772,8 +805,8 @@ $btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
 $btn-disabled-opacity:        .65 !default;
 $btn-active-box-shadow:       inset 0 3px 5px rgba($black, .125) !default;
 
-$btn-link-color:              var(--#{$prefix}link-color) !default;
-$btn-link-hover-color:        var(--#{$prefix}link-hover-color) !default;
+$btn-link-color:              $white !default;
+$btn-link-hover-color:        #FBFF22 !default;
 $btn-link-disabled-color:     $gray-600 !default;
 
 // Allows for customizing button radius independently from global border radius
@@ -1065,7 +1098,7 @@ $nav-link-padding-x:                1rem !default;
 $nav-link-font-size:                null !default;
 $nav-link-font-weight:              null !default;
 $nav-link-color:                    var(--#{$prefix}link-color) !default;
-$nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
+$nav-link-hover-color:               #9C9E18 !default;
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
 $nav-link-disabled-color:           $gray-600 !default;
 
