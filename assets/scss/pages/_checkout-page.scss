@@ -1,0 +1,26 @@
+.progress-box{
+    border: 1px solid #000;
+    width: 32px;
+    height: 32px;
+    background-color: #f3f1e5;
+    z-index: 1;
+    
+
+    @include pad(){
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+    
+}
+.progress-box-active {
+    background-color: #000;
+    color: #FBFF22;
+  }
+.sparkler-lg{
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}

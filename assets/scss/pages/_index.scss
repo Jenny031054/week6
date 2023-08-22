@@ -1,10 +1,15 @@
-@mixin pad{
-  @media(min-width: 768px){
-  @content;
+.w-80{
+  width: 80px;
 }
+.w-32{
+  width: 32px;
 }
-
-
+.w-md-48{
+  @include pad(){
+    width: 48px;
+  }
+  
+}
 img{
   object-fit: cover;
 }
@@ -34,6 +39,17 @@ img{
 }
 .explore-p{
   padding: 35px 58px;
+}
+.explore-text-p{
+ 
+  @include pad(){
+    
+    
+  }
+  
+}
+.p-96{
+  width: 96px;
 }
 .sparkler-icon{
   width: 24px;
