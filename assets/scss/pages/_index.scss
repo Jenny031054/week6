@@ -111,7 +111,7 @@ img{
   vertical-align: middle;
   
 }
-nav a{
+nav a,span{
   :hover{
     color:#9C9E18;
   }
@@ -133,6 +133,49 @@ nav a{
 }
 .hamburger span {
   font-size: 30px;
+}
+.fs-md-7{
+  @include pad() {
+    font-size: 64px;
+  }
+}
+//多選標籤樣式
+.tag-checkbox{
+  // 隱藏 checkbox
+  display: none;
+}
+.tag-list {
+  .tag-item {
+    position: relative;
+    color: #030303;
+    padding: 4px 24px 4px 24px;
+    border-left: 4px solid black;
+    
+
+  }
+  .tag-item:focus {
+    // 移除 Bootstrap 預設的按鈕 focus 邊框
+    box-shadow: none;
+  }
+  // 當 .tag-item 被 hover 的時候 .tag-item 加入以下樣式
+  // 當 .tag-checkbox 狀態是 checked 的時候，同階層的 .tag-item 加入以下樣式
+  .tag-item:hover,
+  .tag-checkbox:checked + .tag-item {
+    background-color: #030303;
+    color: white;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 4px;
+      background-color: #fbff22;
+      height: calc(100% + 4px);
+      top: -2px;
+      left: -4px;
+    }
+  }
+
+
+
 }
 
 

@@ -17,6 +17,16 @@
     background-color: #000;
     color: #FBFF22;
   }
+.pay-list::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 2px;    
+    background-color: #000;
+    top: 30%;
+    left:5%;
+    right:5%
+}
 .sparkler-lg{
     width: 32px;
     height: 32px;

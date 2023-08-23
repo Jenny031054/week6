@@ -590,20 +590,7 @@ $font-sizes: (
 // scss-docs-end font-sizes
 
 //自定義RWD font-size
-$utilities: (
-  "font-sizes": (
-    property: font-size,
-    responsive: true,
-    values: (
-      1:  $h1-font-size ,//60
-      2:  $h2-font-size ,//48
-      3:  $h3-font-size ,//32
-      4:  $h4-font-size ,//24
-      5:  $h5-font-size ,//20
-      
-    )
-  )
- );
+
  $utilities: (
   "font-sizes": (
     property: font-size,
