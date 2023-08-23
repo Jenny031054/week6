@@ -10,8 +10,8 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <title>結帳頁</title>
     
-    <script type="module" crossorigin src="/week6/assets/main-8de133d3.js"></script>
-    <link rel="stylesheet" href="/week6/assets/main-b18b79bd.css">
+    <script type="module" crossorigin src="/week6/assets/main-574f86f6.js"></script>
+    <link rel="stylesheet" href="/week6/assets/main-2f526819.css">
   </head>
   <body>
     <div class="container-fluid border-bottom border-3 border-dark mb-1 mb-md-3">
@@ -80,25 +80,22 @@
     <!--進度條-->
     <div class="container">
         <div class="row d-flex justify-content-center">
-            <div class="col-md-6 ">
-                <div class="position-relative m-4">
-                    <div class="progress" style="height: 2px;">
-                    <div class="progress-bar bg-primary w-100" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="mb-2">
-                    <div class="position-absolute top-0 start-0 translate-middle d-flex justify-content-center align-items-center progress-box progress-box-active">1</div>
-                    <p class="mt-5 position-absolute top-100 start-0 translate-middle fw-bold">訂單確認</p>
-                    </div>
-                    <div class="mb-2">
-                    <div class="position-absolute top-0 start-50 translate-middle d-flex justify-content-center align-items-center progress-box ">2</div>
-                    <p class="mt-5 position-absolute top-100 start-50 translate-middle fw-bold">訂單付款</p>
-                    </div>
-                    <div class="mb-2">
-                    <div class="position-absolute top-0 start-100 translate-middle  d-flex justify-content-center align-items-center progress-box">3</div>
-                    <p class="mt-5 position-absolute top-100 start-100 translate-middle fw-bold">訂購結果</p>
-                    </div>
-                </div>
-            </div>
+            <div class="col-md-6 mx-auto">
+                <ol class="pay-list mt-5 d-flex justify-content-between list-unstyled position-relative">
+                  <li class="d-flex flex-column align-items-center">
+                    <p class="number progress-box d-flex justify-content-center align-items-center progress-box-active mb-0">1</p>
+                    <p class="fw-bold mb-0 mt-1">訂單確認</p>
+                  </li>
+                  <li class="d-flex flex-column align-items-center">
+                    <p class="number progress-box d-flex justify-content-center align-items-center mb-0">2</p>
+                    <p class="fw-bold mb-0 mt-1">結帳付款</p>
+                  </li>
+                  <li class="d-flex flex-column align-items-center">
+                    <p class="number progress-box d-flex justify-content-center align-items-center mb-0">3</p>
+                    <p class="fw-bold mb-0 mt-1">訂單結果</p>
+                  </li>
+                </ol>
+              </div>
         </div>
     </div>
     <!--title-->
