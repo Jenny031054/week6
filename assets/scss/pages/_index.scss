@@ -37,17 +37,7 @@ img{
   }
  
 }
-.explore-p{
-  padding: 35px 58px;
-}
-.explore-text-p{
- 
-  @include pad(){
-    
-    
-  }
-  
-}
+
 .p-96{
   width: 96px;
 }
@@ -60,7 +50,7 @@ img{
 }
 
 .recent-img{
-  max-width: 416px;
+  
   height: 255px;
 }
 .online-img{
@@ -138,6 +128,13 @@ nav a,span{
   @include pad() {
     font-size: 64px;
   }
+}
+.border-end-md-0 {
+  border-right:#000 solid 2px;
+  @include pad() {
+    border-right:0px;
+  }
+  
 }
 //多選標籤樣式
 .tag-checkbox{
