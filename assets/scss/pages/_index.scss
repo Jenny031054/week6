@@ -170,9 +170,15 @@ nav a,span{
       left: -4px;
     }
   }
+}
 
-
-
+.menu-mobile {
+  position: absolute;
+  top: 110px;
+  width: 100%;
+  background-color:#f3f1e5 ;
+  z-index: 2;
+  
 }
 
 
