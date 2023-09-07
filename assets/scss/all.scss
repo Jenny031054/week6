@@ -6,10 +6,11 @@
 
 @import './utils/mixin';
 @import './layout/header.scss';
+@import './pages/index.scss';
 @import './pages/checkout-page';
 @import './layout/footer.scss';
 
 
-@import './pages/index.scss';
+
 
 @import "../../node_modules/bootstrap";

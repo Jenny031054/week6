@@ -26,7 +26,12 @@ img{
    width: 100%;
   }
 }
-
+.border-end-md-0 {
+  border: #000 solid 2px;
+  @include pad(){
+    border-right: 0px;
+  }
+}
 
 .explore-logo{
   height: 40px;
@@ -37,6 +42,7 @@ img{
   }
  
 }
+
 
 .p-96{
   width: 96px;
@@ -129,13 +135,6 @@ nav a,span{
     font-size: 64px;
   }
 }
-.border-end-md-0 {
-  border-right:#000 solid 2px;
-  @include pad() {
-    border-right:0px;
-  }
-  
-}
 //多選標籤樣式
 .tag-checkbox{
   // 隱藏 checkbox
@@ -168,8 +167,12 @@ nav a,span{
       height: calc(100% + 4px);
       top: -2px;
       left: -4px;
+      
     }
   }
+
+
+
 }
 
 .menu-mobile {
@@ -178,7 +181,7 @@ nav a,span{
   width: 100%;
   background-color:#f3f1e5 ;
   z-index: 2;
-  
+
 }
 
 
