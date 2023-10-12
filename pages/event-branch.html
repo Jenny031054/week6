@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/icofont/icofont.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>單一活動詳情頁</title>
+    
+  </head>
+<%- include('./layout/header'); -%>
+<div class="container my-5">
+    <div class="row">
+        <div class="col-12 col-lg-10 border border-primary border-3  mb-lg-0 mb-3 py-3">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/09.jpg?raw=true" alt="" class="img-fluid">
+        </div>
+       
+        <div class="col-12 col-lg-2">
+            <div class="d-none d-lg-block h-100">
+                <div class="d-flex flex-lg-column justify-content-between h-100">
+                    <div class="border border-primary border-3 mb-lg-3  text-center w-auto h-auto">
+                        <p class="mx-auto py-lg-4 fw-bold fs-2">2023</p>
+                    </div>
+                    <div class="border border-primary border-3 d-flex flex-column justify-content-between w-auto h-75">
+                        <div class="d-flex flex-column align-items-center pt-5">
+                            <p class=" fw-bold fs-2">MAY</p>
+                            <p class=" fw-bold fs-2">19</p>
+                        </div>
+                        <div class="line-date"></div> 
+                        <div class="d-flex flex-column align-items-center pb-5">
+                            <p class="fs-3">12:00</p>
+                            <p class="fs-3">｜</p>
+                            <p class="fs-3">20:00</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="d-lg-none">
+                <div class="row d-flex justify-content-around h-100">
+                    <div class="col-4">
+                        <div class="border border-primary border-3 d-flex align-items-center justify-content-between h-100">
+                             <p class="my-auto mx-auto py-lg-4 fw-bold fs-4">2023</p>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="border border-primary border-3 d-flex justify-content-around align-items-center py-2">
+                            <div class="d-flex flex-column align-items-center">
+                                <p class=" fw-bold fs-4">MAY</p>
+                                <p class=" fw-bold fs-4">19</p>
+                            </div>
+                            <div class="line-date-sm"></div> 
+                            <div class="d-flex flex-column align-items-center">
+                                <p >12:00</p>
+                                <p class=" rotate180">｜</p>
+                                <p >20:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+       
+    </div>
+</div>
+<!--title-->
+<div class="container mt-6 mb-5">
+    <h1 class="fw-bold mb-2">返老還童-制服聯誼</h1>
+    <p class="mb-4 font-NotoSans">穿上制服，無年齡限制，一起走上街頭、尋找青春才有的純愛心動！</p>
+    <ul class="list-unstyled tag-list  d-flex flex-wrap">
+        <li class="me-2 mb-2">
+            <label for="" class="">
+                <input type="checkbox" class="tag-checkbox-event">
+                <p class="fw-bold text-center  border border-primary btn  tag-i">演出</p>
+            </label>
+        </li>
+        <li class="me-2">
+            <label for="" class="">
+                <input type="checkbox" class="tag-checkbox-event">
+                <p class="fw-bold text-center  border border-primary btn  tag-i">演出</p>
+            </label>
+        </li>
+        <li class="me-2 mb-2">
+            <label for="" class="">
+                <input type="checkbox" class="tag-checkbox-event">
+                <p class="fw-bold text-center  border border-primary btn  tag-i">演出</p>
+            </label>
+        </li>
+        <li class="me-2">
+            <label for="" class="">
+                <input type="checkbox" class="tag-checkbox-event">
+                <p class="fw-bold text-center  border border-primary btn  tag-i">演出</p>
+            </label>
+        </li>
+    </ul>
+</div>
+<!--text-->
+<div class="container">
+    <div class=" p-4  border border-3 border-primary font-NotoSans">
+        <p class="mb-2">想回到過去？試著讓故事繼續？</p>
+        <p class="mb-2">由戀愛家教「艾德溫」主辦策劃，讓各位在安排好的青春行程中擁有自然的純愛互動體驗，互相餵食餅乾、觀察對方手相，有趣的互動環節讓你/妳怦然心動！制服由主辦方提供，妝髮造型可額外加價購！</p>
+        <p class="mb-2">活動中全程會有隨行攝影師，捕捉你們的純愛互動，拍攝成實境電視劇，讓你們能留下永恆的美好回憶</p>
+    </div>
+    
+</div>
+<!--ticket-->
+<div class="container mt-5">
+    <div class="border border-3 border-primary d-flex justify-content-between align-items-center py-2  px-3  mb-4">
+     <h2 class="h4 fs-md-7 mb-0">TICKET</h2>
+     <p class="fs-md-3 fw-bold mb-0">票價</p>
+     
+    </div>
+</div>
+<div class="container mb-5">
+    <table class="w-100 ">
+        <thead class="border-bottom border-primary mb-2  border-3">
+            <tr>
+              <th scope="col">活動日期</th>
+              <th scope="col">票種</th>
+              <th scope="col">票價</th>
+              <th scope="col" class="ms-0">購票</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="border-bottom border-primary my-2">
+                <td>2023/5/12</td>
+                <td>普通票</td>
+                <td>$600</td>
+                <td><button class="btn btn-outline-primary fw-bold px-2 border-3 border border-primary">立即購票</button> </td>
+            </tr>
+            <tr class="border-bottom border-primary my-2">
+                <td>2023/5/12</td>
+                <td>普通票</td>
+                <td>$600</td>
+                <td><button class="btn btn-outline-primary fw-bold px-2 border-3 border border-primary">立即購票</button> </td>
+            </tr>
+            <tr class="border-bottom border-primary my-2">
+                <td>2023/5/12</td>
+                <td>普通票</td>
+                <td>$600</td>
+                <td><button class="btn btn-outline-primary fw-bold px-2 border-3 border border-primary">立即購票</button> </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<%- include('./layout/footer'); -%>
+   
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script type="module" src="../main.js"></script>
+  <script src="/all.js"></script>
+</body>
+</html>

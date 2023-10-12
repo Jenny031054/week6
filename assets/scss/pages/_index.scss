@@ -54,9 +54,7 @@ img{
 .font-NotoSans{
   font-family: "Noto Sans TC";
 }
-
-.recent-img{
-  
+.recent-img{ 
   height: 255px;
 }
 .online-img{
@@ -68,6 +66,10 @@ img{
       height: 317px;
     }
  
+}
+//w
+.w-auto{
+  width: auto;
 }
 //swiper
 .swiper-wrapper {
@@ -100,6 +102,9 @@ img{
 .rotate3{
   rotate:3deg;
 }
+.rotate180{
+  rotate: 180deg;
+}
 .social-icon{
   width: 32px;
   height: 32px;
@@ -115,6 +120,36 @@ nav a,span{
 .link-decoration:hover{
   text-decoration:underline;
 }
+//line
+.line-date{
+  position: relative;
+  &::after{
+    content:"";
+    background-color: #000;
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    rotate: 120deg;
+    top:0px;
+    left:20%
+  
+  }
+}
+.line-date-sm{
+  position: relative;
+  &::after{
+    content:"";
+    background-color: #000;
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    rotate: 120deg;
+    top:0px;
+    left:-40px
+  
+  }
+}
+  
 //hamburger list
 .fs-18 {
   font-size: 18px;
@@ -135,12 +170,62 @@ nav a,span{
     font-size: 64px;
   }
 }
+.fs-lg-2{
+ @include pad(){
+  font-size: 24px;
+ } 
+}
 //多選標籤樣式
 .tag-checkbox{
   // 隱藏 checkbox
   display: none;
 }
 .tag-list {
+  .tag-i{
+    padding: 4px 24px;
+    position: relative;
+
+    
+  }
+  .tag-checkbox-event{
+    display: none;
+  }
+  .tag-i::before {
+    position: absolute;
+    content: "";
+    background-color: black;
+    height: 105%;
+    width: 5px;
+    left:-6px;
+    top:2px;
+  }
+  .tag-i::after {
+    position: absolute;
+    content: "";
+    background-color: black;
+    height: 6px;
+    width: 100%;
+    left:-6px;
+    top:100%;
+  }
+  .tag-i:focus {
+    // 移除 Bootstrap 預設的按鈕 focus 邊框
+    box-shadow: none;
+  }
+ 
+  .tag-i:hover,
+  .tag-checkbox-event:checked + .tag-i {
+    background-color:black;
+    color: white;
+    &::before{
+      background-color:#bc955c;
+   }
+   &::after {
+    background-color:#bc955c;
+   }
+  }
+  
+
   .tag-item {
     position: relative;
     color: #030303;
