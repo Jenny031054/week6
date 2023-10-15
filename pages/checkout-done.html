@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/icofont/icofont.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>結帳完成頁</title>
+    
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <!--進度條-->
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6 mx-auto">
+                <ol class="pay-list mt-5 d-flex justify-content-between list-unstyled position-relative">
+                  <li class="d-flex flex-column align-items-center">
+                    <p class="number progress-box d-flex justify-content-center align-items-center progress-box-active mb-0">
+                        <span class="material-symbols-outlined">
+                            done
+                        </span>
+                    </p>
+                    <p class="fw-bold mb-0 mt-1">訂單確認</p>
+                  </li>
+                  <li class="d-flex flex-column align-items-center">
+                    <p class="number progress-box d-flex justify-content-center align-items-center progress-box-active mb-0">
+                        <span class="material-symbols-outlined">
+                            done
+                        </span>
+                    </p>
+                    <p class="fw-bold mb-0 mt-1">結帳付款</p>
+                  </li>
+                  <li class="d-flex flex-column align-items-center">
+                    <p class="number progress-box d-flex justify-content-center align-items-center  progress-box-active mb-0">3</p>
+                    <p class="fw-bold mb-0 mt-1">訂單結果</p>
+                  </li>
+                </ol>
+              </div>
+        </div>
+    </div>
+    <!--title-->
+    <div class="container mt-6 mb-4">
+        <div class="mx-auto  text-center">
+            <span class="material-symbols-outlined fs-1 mb-2">
+                check_circle
+            </span>
+            <h1 class="fs-2 fw-bold text-center">訂購完成</h1>
+        </div>
+        
+    </div>
+    <!--資訊表-->
+
+    <div class="container mb-6">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="d-flex justify-content-between py-1 border-top border-3 border-primary">
+                    <p class="fw-bold">訂單編號</p>
+                    <p class="font-NotoSans">892746123</p>
+                </div>
+                <div class="d-flex justify-content-between py-1 border-top border-bottom border-primary">
+                    <p class="fw-bold">訂購時間</p>
+                    <p class="font-NotoSans">2023/04/28 14:30</p>
+                </div>
+                <div class="d-flex justify-content-between py-1 border-bottom border-primary">
+                    <p class="fw-bold">票券</p>
+                    <p class="font-NotoSans">改頭換面票（含大改造）$8000</p>
+                </div>
+                <div class="d-flex justify-content-between py-1 border-bottom border-primary">
+                    <p class="fw-bold">取票序號</p>
+                    <p class="font-NotoSans text-success fw-bold">95G54J4434</p>
+                </div>
+                <div class="d-flex justify-content-between py-1 border-bottom border-primary">
+                    <p class="fw-bold">取票號碼</p>
+                    <p class="font-NotoSans text-success fw-bold">04597101</p>
+                </div>
+                
+                <p class="font-NotoSans mt-2">請至 7-Eleven 完成取票，請於 ibon 點選【購票/取票/訂房】>【售票系統】>【取票】>【拓元售票系統】。 若您未前往取票，本筆交易仍視為完成，不可取消訂單。 若需退票，請按照退票辦法進行申請。</p>
+            </div>
+        </div>
+    </div>
+
+   
+
+
+    <%- include('./layout/footer'); -%>
+   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+    <script src="/all.js"></script>
+  </body>
+</html>

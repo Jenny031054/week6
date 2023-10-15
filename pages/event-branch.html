@@ -14,15 +14,18 @@
 <%- include('./layout/header'); -%>
 <div class="container my-5">
     <div class="row">
-        <div class="col-12 col-lg-10 border border-primary border-3  mb-lg-0 mb-3 py-3">
-            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/09.jpg?raw=true" alt="" class="img-fluid">
+        <div class="col-12 col-xl-10 mb-xl-0 mb-3">
+            <div class=" border border-primary border-3 p-3 ">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/09.jpg?raw=true" alt="" class="img-fluid">
+            </div>
+            
         </div>
        
-        <div class="col-12 col-lg-2">
-            <div class="d-none d-lg-block h-100">
-                <div class="d-flex flex-lg-column justify-content-between h-100">
-                    <div class="border border-primary border-3 mb-lg-3  text-center w-auto h-auto">
-                        <p class="mx-auto py-lg-4 fw-bold fs-2">2023</p>
+        <div class="col-12 col-xl-2">
+            <div class="d-none d-xl-block h-100">
+                <div class="d-flex flex-xl-column justify-content-between h-100">
+                    <div class="border border-primary border-3 mb-xl-3  text-center w-auto h-auto">
+                        <p class="mx-auto py-xl-4 fw-bold fs-2">2023</p>
                     </div>
                     <div class="border border-primary border-3 d-flex flex-column justify-content-between w-auto h-75">
                         <div class="d-flex flex-column align-items-center pt-5">
@@ -39,11 +42,11 @@
                     </div>
                 </div>
             </div>
-            <div class="d-lg-none">
+            <div class="d-xl-none">
                 <div class="row d-flex justify-content-around h-100">
                     <div class="col-4">
                         <div class="border border-primary border-3 d-flex align-items-center justify-content-between h-100">
-                             <p class="my-auto mx-auto py-lg-4 fw-bold fs-4">2023</p>
+                             <p class="my-auto mx-auto py-xl-4 fw-bold fs-4">2023</p>
                         </div>
                     </div>
                     <div class="col-8">
@@ -116,33 +119,33 @@
     </div>
 </div>
 <div class="container mb-5">
-    <table class="w-100 ">
+    <table class="w-100">
         <thead class="border-bottom border-primary mb-2  border-3">
             <tr>
               <th scope="col">活動日期</th>
               <th scope="col">票種</th>
               <th scope="col">票價</th>
-              <th scope="col" class="ms-0">購票</th>
+              <th scope="col" class="">購票</th>
             </tr>
         </thead>
-        <tbody>
-            <tr class="border-bottom border-primary my-2">
+        <tbody class="w-100">
+            <tr class=" border-bottom border-primary my-2">
                 <td>2023/5/12</td>
                 <td>普通票</td>
                 <td>$600</td>
-                <td><button class="btn btn-outline-primary fw-bold px-2 border-3 border border-primary">立即購票</button> </td>
+                <td class=""><a href="checkout-page.html" class="ms-auto btn btn-outline-primary fw-bold px-2 border-3 border border-primary">立即購票</a> </td>
+            </tr>
+            <tr class="border-bottom border-primary my-2 ">
+                <td>2023/5/12</td>
+                <td>改頭換面票（含大改造）</td>
+                <td>$600</td>
+                <td><a href="checkout-page.html" class="btn btn-outline-primary fw-bold px-2 border-3 border border-primary">立即購票</a> </td>
             </tr>
             <tr class="border-bottom border-primary my-2">
                 <td>2023/5/12</td>
-                <td>普通票</td>
+                <td>必勝票（含戀愛小抄）</td>
                 <td>$600</td>
-                <td><button class="btn btn-outline-primary fw-bold px-2 border-3 border border-primary">立即購票</button> </td>
-            </tr>
-            <tr class="border-bottom border-primary my-2">
-                <td>2023/5/12</td>
-                <td>普通票</td>
-                <td>$600</td>
-                <td><button class="btn btn-outline-primary fw-bold px-2 border-3 border border-primary">立即購票</button> </td>
+                <td><a href="checkout-page.html" class="btn btn-outline-primary fw-bold px-2 border-3 border border-primary">立即購票</a> </td>
             </tr>
         </tbody>
     </table>

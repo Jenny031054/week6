@@ -431,13 +431,49 @@
       </figcaption>
     </figure>
   </div>
+  <!--pop modal-->
+  <div class="modal fade"  id="exampleModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <h4 class="fw-bold ms-auto">立刻成為7TAO會員</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-8 mb-4 text-center">
+                            立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。<br>
+                    您也可以先報名活動，日後再註冊帳號，<br>
+                    系統會在認證您的Email後，協助您找回舊的訂單。
+                        </div>
+                        <div class="col-6">
+                            <div class="d-grid gap-2">
+                                <a href="member.html" class="btn btn-primary text-secondary" data-bd-dismiss="modal">
+                                    立即成為會員
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+  </div>
   <!--footer-->
- 
-
-
- 
-    <%- include('./layout/footer'); -%>
-   
+  <%- include('./layout/footer'); -%>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded",(event)=> {
+            const exampleModal =new bootstrap.Modal(document.getElementById("exampleModal"));
+            exampleModal.show();
+            console.log('Script executed!');
+        })
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module" src="../main.js"></script>
     <script src="../all.js"></script>
