@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <title>結帳頁</title>
+    <title>結帳完成頁</title>
     
     <script type="module" crossorigin src="/week6/assets/main-a0bce9fa.js"></script>
     <link rel="stylesheet" href="/week6/assets/main-544f4db2.css">
@@ -85,15 +85,23 @@
             <div class="col-md-6 mx-auto">
                 <ol class="pay-list mt-5 d-flex justify-content-between list-unstyled position-relative">
                   <li class="d-flex flex-column align-items-center">
-                    <p class="number progress-box d-flex justify-content-center align-items-center progress-box-active mb-0">1</p>
+                    <p class="number progress-box d-flex justify-content-center align-items-center progress-box-active mb-0">
+                        <span class="material-symbols-outlined">
+                            done
+                        </span>
+                    </p>
                     <p class="fw-bold mb-0 mt-1">訂單確認</p>
                   </li>
                   <li class="d-flex flex-column align-items-center">
-                    <p class="number progress-box d-flex justify-content-center align-items-center  mb-0">2</p>
+                    <p class="number progress-box d-flex justify-content-center align-items-center progress-box-active mb-0">
+                        <span class="material-symbols-outlined">
+                            done
+                        </span>
+                    </p>
                     <p class="fw-bold mb-0 mt-1">結帳付款</p>
                   </li>
                   <li class="d-flex flex-column align-items-center">
-                    <p class="number progress-box d-flex justify-content-center align-items-center mb-0">3</p>
+                    <p class="number progress-box d-flex justify-content-center align-items-center  progress-box-active mb-0">3</p>
                     <p class="fw-bold mb-0 mt-1">訂單結果</p>
                   </li>
                 </ol>
@@ -102,72 +110,46 @@
     </div>
     <!--title-->
     <div class="container mt-6 mb-4">
-        <h1 class="fw-bold text-center">返老還童-制服聯誼</h1>
+        <div class="mx-auto  text-center">
+            <span class="material-symbols-outlined fs-1 mb-2">
+                check_circle
+            </span>
+            <h1 class="fs-2 fw-bold text-center">訂購完成</h1>
+        </div>
+        
     </div>
-    <!--form-->
-    <div class="container">
+    <!--資訊表-->
+
+    <div class="container mb-6">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <table class="table border-top">
-                    
-                    <tbody>
-                    <tr>
-                        <th scope="row">日期</th>
-                        <td class="font-NotoSans text-end">2023/5/12</td>
-                        
-                    </tr>
-                    <tr>
-                        <th scope="row">票種</th>
-                        <td  class="font-NotoSans text-end" >改頭換面票(含大改造)</td>
-                    
-                    </tr>
-                    <tr>
-                        <th scope="row">票價</th>
-                        <td  class="font-NotoSans text-end" colspan="2">$8000</td>
-                        
-                    </tr>
-                    </tbody>
-                </table>
+                <div class="d-flex justify-content-between py-1 border-top border-3 border-primary">
+                    <p class="fw-bold">訂單編號</p>
+                    <p class="font-NotoSans">892746123</p>
+                </div>
+                <div class="d-flex justify-content-between py-1 border-top border-bottom border-primary">
+                    <p class="fw-bold">訂購時間</p>
+                    <p class="font-NotoSans">2023/04/28 14:30</p>
+                </div>
+                <div class="d-flex justify-content-between py-1 border-bottom border-primary">
+                    <p class="fw-bold">票券</p>
+                    <p class="font-NotoSans">改頭換面票（含大改造）$8000</p>
+                </div>
+                <div class="d-flex justify-content-between py-1 border-bottom border-primary">
+                    <p class="fw-bold">取票序號</p>
+                    <p class="font-NotoSans text-success fw-bold">95G54J4434</p>
+                </div>
+                <div class="d-flex justify-content-between py-1 border-bottom border-primary">
+                    <p class="fw-bold">取票號碼</p>
+                    <p class="font-NotoSans text-success fw-bold">04597101</p>
+                </div>
+                
+                <p class="font-NotoSans mt-2">請至 7-Eleven 完成取票，請於 ibon 點選【購票/取票/訂房】>【售票系統】>【取票】>【拓元售票系統】。 若您未前往取票，本筆交易仍視為完成，不可取消訂單。 若需退票，請按照退票辦法進行申請。</p>
             </div>
         </div>
     </div>
 
-    <!--聯絡人-->
-    <div class="container mt-4">
-        <div class="row justify-content-center">
-            <div class="col-md-6 d-flex flex-column ">
-                <div class="d-flex flex-column justify-content-center mb-2">
-                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true" alt="sparkler" class="sparkler-lg mb-2">
-                    <h4 class="fw-bold text-center">聯絡人資訊</h4>
-                </div>
-                <form action="" class="font-NotoSans mb-2">
-                    <div class="mb-2">
-                        <label for="name" class="form-label">聯絡人姓名</label>
-                        <input type="text" id="name" class="form-control border border-primary border-2" placeholder="請輸入聯絡人名稱">
-                    </div>
-                    <div class="mb-2">
-                        <label for="email" class="form-label">email</label>
-                        <input type="email" id="email" class="form-control  border border-primary border-2" placeholder="請輸入Email">
-                    </div>
-                    <div class="mb-2">
-                        <label for="phone" class="form-label">手機號碼</label>
-                        <input type="number" id="phone" class="form-control  border border-primary border-2" placeholder="請輸入手機號碼">
-                    </div>
-                    
-
-                </form>
-                <div class="col-md-4 me-auto ms-auto mb-2">
-                    <a href="checkout-done.html" class="btn bg-dark btn-link d-flex align-items-center py-1 justify-content-center w-100 font-NotoSans">確認表單資料
-                        <span class="material-icons">
-                        keyboard_double_arrow_right
-                        </span>
-                        </a>
-                </div>
-                <a href="#" class="font-NotoSans fs-18 text-center mb-2">取消購票</a>
-            </div>
-        </div>
-    </div>
-
+   
 
 
     <div class="py-4 d-flex justify-content-center border-top  border-primary border-3">
